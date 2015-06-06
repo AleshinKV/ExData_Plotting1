@@ -7,6 +7,6 @@ data$datetime <- strptime(paste(strtrim (data$Date,8),data$Time), "%d.%m.%Y %H:%
 png(file = "plot1.png", bg = "transparent")
 
 hist(data$Global_active_power, xlab = "Global Active Power (kilowatts)", 
-     main = "Global Active Power", col = "red", ylim =c(0,1200))
+     main = "Global Active Power", col = "red", rlim =c(0,1200))
 
 dev.off()
